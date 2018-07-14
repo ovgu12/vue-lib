@@ -1,0 +1,42 @@
+{
+  "name": "vue-lib",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "build:lib": "vue-cli-service build --target lib ./src/index.ts && yarn build:cjs && yarn build:esm",
+    "build:cjs": "tsc -m commonjs --outDir ./dist/cjs",
+    "build:esm": "tsc -m esnext --outDir ./dist/es6 --declaration true --declarationDir './dist/types'",
+    "test:unit": "vue-cli-service test:unit"
+  },
+  "dependencies": {
+    "@platform.shared.libs.typescript/chartiq": "file:../chartiq-benchmark",
+    "vue": "2.5.16",
+    "vue-class-component": "6.2.0",
+    "vue-property-decorator": "7.0.0"
+  },
+  "devDependencies": {
+    "@vue/cli": "3.0.0-rc.4",
+    "@vue/cli-plugin-typescript": "3.0.0-rc.4",
+    "@vue/cli-plugin-unit-mocha": "^3.0.0-rc.4",
+    "@vue/cli-service": "3.0.0-rc.4",
+    "@vue/test-utils": "^1.0.0-beta.20",
+    "chai": "^4.1.2",
+    "jquery": "3.3.1",
+    "node-sass": "4.9.0",
+    "rimraf": "2.6.2",
+    "sass-loader": "7.0.3"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 10"
+  ],
+  "files": [
+    "dist"
+  ],
+  "module": "./dist/es6/index.js",
+  "main": "./dist/cjs/index.js",
+  "types": "./dist/types/index.d.ts"
+}
