@@ -11,6 +11,10 @@ export default class Example extends Vue {
   }
 
   public mounted() {
+    this.drawChart();
+  }
+
+  protected drawChart() {
     const el = this.$el.parentElement as HTMLElement;
     const basicChart = new BasicChart(el);
     const feed = new QuoteFeedSimulator(154.3);
