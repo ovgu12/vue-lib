@@ -1,5 +1,5 @@
-import Example from './Example/Example';
+import HelloWorld from './HelloWorld/HelloWorld';
 
 export {
-  Example,
+  HelloWorld,
 };

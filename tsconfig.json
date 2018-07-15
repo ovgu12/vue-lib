@@ -6,6 +6,7 @@
     "strict": true,
     "noImplicitAny": true,
     "noImplicitThis": true,
+    "esModuleInterop": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "allowSyntheticDefaultImports": true,
@@ -15,7 +16,7 @@
       "jQuery"
     ],
     "lib": [
-      "esnext",
+      "es6",
       "dom",
       "scripthost"
     ]
@@ -24,6 +25,7 @@
     "src/**/*.ts"
   ],
   "exclude": [
+    "src/main.ts",
     "dist",
     "node_modules",
     "tests"

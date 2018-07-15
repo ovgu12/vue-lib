@@ -1,6 +1,11 @@
 .DS_Store
 node_modules
 /dist
+.cache-loader
+
+# Coverage
+.nyc_output
+coverage
 
 # local env files
 .env.local
