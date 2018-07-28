@@ -1,7 +1,11 @@
 <template>
   <div id="app">
     <img src="../assets/logo.png">
-    <hello-world text="Vue"></hello-world>
+    <hello-world text="Vue">
+      <template slot="default" slot-scope="{data}">
+        <icon v-if="data.id === 1"></icon>
+      </template>
+    </hello-world>
   </div>
 </template>
 <script src="./App.ts"></script>

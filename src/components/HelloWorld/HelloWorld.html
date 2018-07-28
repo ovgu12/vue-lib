@@ -1,3 +1,5 @@
 <div class="hello">
-    Hello {{text}}
+    Hello World
+    <slot v-bind:data="data" name="default"></slot>
+    <slot v-bind:text="text" name="other"></slot>
 </div>
