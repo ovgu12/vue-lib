@@ -1,6 +1,6 @@
 {
   "name": "vue-lib-sfc-example",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Example for build Vue SFC",
   "main": "./dist/vue-lib.common.js",
   "types": "./dist/types/index.d.ts",
@@ -8,7 +8,6 @@
   "files": [
     "dist/*",
     "src/*",
-    "public/*",
     "*.json",
     "*.js",
     "*.ts"
@@ -18,8 +17,8 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build --target lib ./src/index.ts && yarn build:esm",
     "build:esm": "tsc -m es6 --outDir ./dist/es6 --declaration true --declarationDir './dist/types'",
-    "test:unit": "vue-cli-service test:unit",
-    "coverage": "yarn test:unit --coverage",
+    "test": "vue-cli-service test:unit",
+    "coverage": "yarn test --coverage",
     "webpack": "webpack"
   },
   "dependencies": {

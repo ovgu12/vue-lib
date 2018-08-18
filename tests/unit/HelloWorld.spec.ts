@@ -2,13 +2,17 @@ import {shallowMount} from '@vue/test-utils';
 import HelloWorld from '../../src/components/HelloWorld/HelloWorld.vue';
 
 describe('HelloWorld.vue', () => {
-  it('should mount ok', () => {
+  const text = 'new message';
+  let wrapper;
+  beforeEach(() => {
     const text = 'new message';
-    const wrapper = shallowMount(HelloWorld, {
+    wrapper = shallowMount(HelloWorld, {
       propsData: {
         text,
       }
     });
+  });
+  it('should mount ok', () => {
     expect(wrapper.find('.hello').element.textContent.trim())
         .toEqual('Hello World');
   });
