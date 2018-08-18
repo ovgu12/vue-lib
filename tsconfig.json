@@ -12,8 +12,7 @@
     "allowSyntheticDefaultImports": true,
     "sourceMap": false,
     "types": [
-      "node",
-      "jQuery"
+      "node"
     ],
     "lib": [
       "es6",

@@ -10,6 +10,6 @@ describe('HelloWorld.vue', () => {
       }
     });
     expect(wrapper.find('.hello').element.textContent.trim())
-        .toEqual('Hello new message');
+        .toEqual('Hello World');
   });
 });
