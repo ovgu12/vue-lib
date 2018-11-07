@@ -3,7 +3,7 @@
     <img src="../assets/logo.png">
     <hello-world text="Vue">
       <template slot="default" slot-scope="{data}">
-        <icon v-if="data.id === 1"></icon>
+        <dummy></dummy>
       </template>
     </hello-world>
   </div>

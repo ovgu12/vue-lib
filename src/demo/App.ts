@@ -1,10 +1,10 @@
 import {Component, Vue} from 'vue-property-decorator';
-import {HelloWorld, Icon} from '../components';
+import {Dummy, HelloWorld} from '../components';
 
 @Component({
   components: {
     HelloWorld,
-    Icon,
+    Dummy,
   }
 })
 export default class App extends Vue {}

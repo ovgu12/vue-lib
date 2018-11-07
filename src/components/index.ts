@@ -1,4 +1,4 @@
-import HelloWorld from './HelloWorld/HelloWorld';
-import Icon from './Icon/Icon';
+import Dummy from './Dummy/Dummy.vue';
+import HelloWorld from './HelloWorld/HelloWorld.vue';
 
-export {HelloWorld, Icon};
+export {Dummy, HelloWorld};

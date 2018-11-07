@@ -1,8 +1,6 @@
 # vue-lib
 Test of building library of components using vue-cli
-- SFC with ypescript
-- Unit Tests with Jest
+- SFC with Typescript and Jest
 # TODO
-- [ ] Build in ESModule does not generate render function
-- [ ] Build script for multiple components
+- [ ] ESM Build
 - [ ] Lint setup
