@@ -1,9 +1,9 @@
-import {shallowMount} from '@vue/test-utils';
-import {HelloWorld} from '../../src/components';
+import { shallowMount } from '@vue/test-utils';
+import { HelloWorld } from '../../src/components';
 
 describe('HelloWorld.vue', () => {
   const text = 'World';
-  let wrapper;
+  let wrapper: any;
   beforeEach(() => {
     wrapper = shallowMount(HelloWorld, {
       propsData: {
@@ -13,6 +13,6 @@ describe('HelloWorld.vue', () => {
   });
   it('should mount ok', () => {
     expect(wrapper.find('.text').element.textContent.trim())
-        .toEqual('Hello World');
+      .toEqual('Hello World');
   });
 });

@@ -12,10 +12,12 @@
     "allowSyntheticDefaultImports": true,
     "sourceMap": false,
     "types": [
-      "node"
+      "node",
+      "jest",
+      "vue"
     ],
     "lib": [
-      "es6",
+      "esnext",
       "dom",
       "scripthost"
     ]

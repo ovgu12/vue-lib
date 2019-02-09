@@ -1,12 +1,10 @@
 <template>
-<div class="text">
-    Hello {{ text }} <slot v-bind:data="data" name="default"></slot>
-</div>
+  <div class="text">Hello {{ text }}</div>
 </template>
 
 <script lang="ts">
-import Vue from "vue";
-import { Component, Prop } from "vue-property-decorator";
+import Vue from 'vue';
+import { Component, Prop } from 'vue-property-decorator';
 
 @Component
 export default class HelloWorld extends Vue {
@@ -19,6 +17,6 @@ export default class HelloWorld extends Vue {
 
 <style scoped>
 .text {
-  color: green;
+  color: rgb(2, 27, 136);
 }
 </style>
