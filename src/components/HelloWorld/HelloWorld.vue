@@ -1,5 +1,5 @@
 <template>
-  <div class="text">Hello {{ text }}</div>
+  <h1 class="text">Hello {{ text }}</h1>
 </template>
 
 <script lang="ts">
@@ -10,12 +10,10 @@ import { Component, Prop } from 'vue-property-decorator';
 export default class HelloWorld extends Vue {
   @Prop(String)
   public text!: string;
-  @Prop(Object)
-  public data!: object;
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .text {
   color: rgb(2, 27, 136);
 }

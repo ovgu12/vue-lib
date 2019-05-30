@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "baseUrl": ".",
+    "outDir": "dist",
     "target": "es5",
     "moduleResolution": "node",
     "strict": true,
@@ -23,12 +24,12 @@
     ]
   },
   "include": [
+    "src/**/*.vue",
     "src/**/*.ts"
   ],
   "exclude": [
+    "src/demo",
     "src/main.ts",
-    "dist",
-    "node_modules",
     "tests"
   ]
 }

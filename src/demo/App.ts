@@ -4,6 +4,6 @@ import { HelloWorld } from '../components';
 @Component({
   components: {
     HelloWorld,
-  }
+  },
 })
-export default class App extends Vue { }
+export default class App extends Vue {}
