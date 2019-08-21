@@ -1,10 +1,10 @@
 <template>
   <div id="app">
-    <img src="../assets/logo.png" />
+    <img src="../src/assets/logo.png" />
     <hello-world text="Vue"></hello-world>
   </div>
 </template>
-<script src="./App.ts"></script>
+<script lang="ts" src="./App.ts"></script>
 <style lang="scss">
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;

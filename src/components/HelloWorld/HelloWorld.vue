@@ -1,5 +1,5 @@
 <template>
-  <h1 class="text">Hello {{ text }}</h1>
+  <div class="hello-world">Hello {{ text }}</div>
 </template>
 
 <script lang="ts">
@@ -14,7 +14,8 @@ export default class HelloWorld extends Vue {
 </script>
 
 <style lang="scss" scoped>
-.text {
+.hello-world {
   color: rgb(2, 27, 136);
+  font-size: 0.9125rem;
 }
 </style>

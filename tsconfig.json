@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "baseUrl": ".",
-    "outDir": "dist",
+    "outDir": "dist/esm",
     "target": "es5",
     "moduleResolution": "node",
     "strict": true,
@@ -13,7 +13,6 @@
     "allowSyntheticDefaultImports": true,
     "sourceMap": false,
     "types": [
-      "node",
       "jest",
       "vue"
     ],
@@ -23,13 +22,7 @@
       "scripthost"
     ]
   },
-  "include": [
-    "src/**/*.vue",
-    "src/**/*.ts"
-  ],
   "exclude": [
-    "src/demo",
-    "src/main.ts",
     "tests"
   ]
 }
