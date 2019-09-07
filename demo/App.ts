@@ -1,9 +1,9 @@
-import { Component, Vue } from 'vue-property-decorator';
-import { HelloWorld } from '../src/components';
+import { Component, Vue } from "vue-property-decorator";
+import { HelloWorld } from "../src/components";
 
 @Component({
   components: {
-    HelloWorld,
-  },
+    HelloWorld
+  }
 })
-export default class App extends Vue { }
+export default class App extends Vue {}

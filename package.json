@@ -3,16 +3,15 @@
   "version": "2.0.0",
   "description": "POC Vue Components with Typescript",
   "scripts": {
-    "start": "yarn serve",
     "serve": "vue-cli-service serve ./demo/main.ts",
-    "lint": "vue-cli-service lint",
+    "build": "vue-cli-service build --target lib ./src/index.ts",
     "test:unit": "vue-cli-service test:unit",
-    "build": "vue-cli-service build --target lib ./src/index.ts"
+    "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "vue": "^2.6.10",
     "vue-class-component": "^7.1.0",
-    "vue-property-decorator": "^8.2.1"
+    "vue-property-decorator": "^8.2.2"
   },
   "devDependencies": {
     "@types/jest": "^24.0.18",
@@ -24,33 +23,19 @@
     "@vue/cli-service": "^3.11.0",
     "@vue/eslint-config-typescript": "^4.0.0",
     "@vue/test-utils": "^1.0.0-beta.25",
-    "babel-eslint": "^10.0.2",
-    "eslint": "^6.2.1",
+    "eslint": "^6.3.0",
     "eslint-plugin-vue": "^5.2.3",
-    "husky": "^3.0.4",
-    "lint-staged": "^9.2.3",
-    "prettier": "^1.18.2",
     "sass": "^1.22.10",
-    "sass-loader": "^7.3.1",
+    "sass-loader": "^8.0.0",
     "ts-jest": "^24.0.2",
-    "typescript": "^3.5.3",
+    "typescript": "^3.6.2",
     "vue-jest": "^3.0.4",
     "vue-template-compiler": "^2.6.10"
   },
   "files": [
-    "dist"
+    "dist",
+    "src"
   ],
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "license": "ISC",
-  "lint-staged": {
-    "*.{vue,js,md,ts,css,html}": [
-      "prettier --write",
-      "git add"
-    ]
-  },
+  "license": "MIT",
   "main": "./dist/vue-lib-sfc-example.umd.js"
 }
